@@ -44,7 +44,7 @@ const HeadContainer = styled('div')`
   overflow: hidden;
   border-radius: 50%;
   border: solid yellow;
-  flex-grow: 4
+  flex-grow: 4;
 `
 
 
