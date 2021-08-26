@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AboutMe from './components/AboutMe'
 
 const Root = styled('div')`
-  background: lightblue;
+  background: #4095c6;
   height: 100vh;
   width: 100vw;
   margin: 0;

@@ -13,7 +13,6 @@ const LeftThird = styled("div")`
   width: 30%;
   padding: 10px;
   display: flex;
-  border: 1px solid;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -35,21 +34,10 @@ const HeadShotContainer = styled("div")`
   height: 150px;
   width: 150px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 100%;
   border: 3px solid black;
   justify-content: center;
   align-items: center;
-`;
-
-const SkillIcons = styled("div")`
-  position: flex;
-  background: grey;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    margin: 5px;
-  }
 `;
 
 function AboutMe() {
@@ -60,15 +48,9 @@ function AboutMe() {
           <Headshot src={"/Headshot.jpg"} />
         </HeadShotContainer>
         <Text>Vahagn Sargsyan</Text>
-        <SkillIcons>
-          <img src={Images.JSIcon} alt="" height={40}/>
-          <img src={Images.TSLogo} alt="" height={40}/>
-          <img src={Images.NodeIcon} alt="" height={40}/>
-          <img src={Images.ReactIcon} alt="" height={40}/>
-          <img src={Images.ReactNativeLogo} alt="" height={40}/>
-        </SkillIcons>
+        <Text>My Skills</Text>
+        <Skills />
       </LeftThird>
-      <Skills />
       <RightTwoThird>
         <Text>
           I am novice FrontEnd developer with many years of custom ServiceNow
