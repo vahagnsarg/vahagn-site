@@ -3,12 +3,10 @@ import styled from 'styled-components';
 import AboutMe from './components/AboutMe'
 
 const Root = styled('div')`
-  justify-content: center;
-  text-align: center;
   background: lightblue;
   height: 100vh;
   width: 100vw;
-  display: flex;
+  margin: 0;
 `
 
 function App() {
