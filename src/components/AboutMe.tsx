@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Navbar from "./Navbar";
 import Skills from "./Skills";
 import { Text } from "./Common/Text";
 import Images from "../assets/Icons";
@@ -26,27 +27,15 @@ const RightTwoThird = styled("h1")`
   align-self: center;
 `;
 
-const Headshot = styled("img")`
-  width: 150px;
-`;
 
-const HeadShotContainer = styled("div")`
-  height: 150px;
-  width: 150px;
-  overflow: hidden;
-  border-radius: 100%;
-  border: 3px solid black;
-  justify-content: center;
-  align-items: center;
-`;
 
-function AboutMe() {
+export default function AboutMe() {
   return (
     <Container>
-      <LeftThird>
-        <HeadShotContainer>
-          <Headshot src={"/Headshot.jpg"} />
-        </HeadShotContainer>
+      {/* NAVBAR Thats Collapsable */}
+      <Navbar />
+
+      {/* <LeftThird>
         <Text>Vahagn Sargsyan</Text>
         <Text>My Skills</Text>
         <Skills />
@@ -55,12 +44,20 @@ function AboutMe() {
         <Text>
           I am novice FrontEnd developer with many years of custom ServiceNow
           BackEnd development. I have many hobbies outside of development which
-          include, but are not limited to Golf 🏌🏼‍♂️, Functional Training 🏋🏼‍♀️ and
-          more Golf 🏌🏼‍♂️
+          include, but are not limited to Golf{" "}
+          <span role="img" aria-label="golf-man">
+            🏌🏼‍♂️
+          </span>
+          , Functional Training{" "}
+          <span role="img" aria-label="training-man">
+            🏋🏼‍♀️
+          </span>{" "}
+          and more Golf{" "}
+          <span role="img" aria-label="training-man">
+            🏌🏼‍♂️
+          </span>
         </Text>
-      </RightTwoThird>
+      </RightTwoThird> */}
     </Container>
   );
 }
-
-export default AboutMe;
