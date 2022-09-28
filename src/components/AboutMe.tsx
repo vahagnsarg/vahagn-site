@@ -1,39 +1,44 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
-import Skills from "./Skills";
-import { Text } from "./Common/Text";
 import Images from "../assets/Icons";
+import { Text } from "./Common/Text";
+import { Parallax } from "react-scroll-parallax";
 
 const Container = styled("div")`
   display: flex;
   height: 100%;
-`;
-
-const LeftThird = styled("div")`
-  width: 30%;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 100vh;
   flex-direction: column;
 `;
 
-const RightTwoThird = styled("h1")`
-  width: 70%;
-  padding: 10px;
+const ImageOne = styled.div`
+  height: 600px;
+  width: 100%;
+  overflow: contain;
+  background-image: url(${Images.VectorBackground});
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
   justify-content: center;
   align-items: center;
-  align-self: center;
 `;
-
-
 
 export default function AboutMe() {
   return (
     <Container>
       {/* NAVBAR Thats Collapsable */}
       <Navbar />
+
+      <Parallax speed={10}>
+        <ImageOne>
+          <Parallax speed={-20}>
+            <Text fontSize={80} fontWeight={900}>
+              Did I Ask?
+            </Text>
+          </Parallax>
+        </ImageOne>
+      </Parallax>
 
       {/* <LeftThird>
         <Text>Vahagn Sargsyan</Text>
