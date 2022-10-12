@@ -45,7 +45,7 @@ export default function AboutMe() {
         </ParallaxBannerLayer>
       </ParallaxBanner>
 
-      <CircleComponent />
+      {/* <CircleComponent /> */}
 
       {/* <Parallax speed={10}>
         <ImageOne>

@@ -5,7 +5,7 @@ import { Text } from "./Text";
 const Container = styled.div`
   display: flex;
   width: 50%;
-  height: 100%;
+  height: 130px;
   align-items: center;
   justify-content: space-between;
 `;
@@ -13,12 +13,10 @@ const Container = styled.div`
 const Option = styled.div`
   display: flex;
   justify-content: center;
-  height: 40px;
-  min-width: 100px;
-  padding: 0 10px;
-  margin: 0 10px;
+  width: 25%;
+  height: inherit;
   background: red;
-  border-radius: 20px;
+  border-right: #fff solid;
   align-items: center;
   cursor: pointer;
 `;

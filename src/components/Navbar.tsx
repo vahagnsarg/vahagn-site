@@ -5,17 +5,18 @@ import { UppercaseText } from "./Common/Text";
 
 const NavbarLayout = styled("div")`
   background: #4095c6;
-  height: 100px;
-  //width: 100%;
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
 `;
 
 const NameAndPhto = styled("div")`
   display: flex;
   align-items: center;
+  padding: 10px;
+  width: 50%;
+  height: 100%;
 `;
 
 const HeadshotImg = styled("img")`
@@ -25,7 +26,7 @@ const HeadshotImg = styled("img")`
 
 const HeadShotContainer = styled("div")`
   height: 100px;
-  width: 100px;
+  min-width: 100px;
   margin-left: 20px;
   overflow: hidden;
   border-radius: 100%;
